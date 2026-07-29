@@ -1,107 +1,53 @@
 /* Sidebar */
 
+
 .sidebar{
 
 position:fixed;
-
 left:0;
-
 top:0;
-
 width:260px;
-
 height:100vh;
-
 background:white;
-
 padding:25px;
-
-border-right:1px solid #dddddd;
+border-right:1px solid #ddd;
 
 }
 
 
-
-/* Logo */
-
 .logo{
 
 font-size:24px;
-
 font-weight:bold;
-
-color:#222;
-
 margin-bottom:35px;
 
 }
 
 
-
-/* Menü */
-
 .menu a{
 
 display:block;
-
-color:#333333 !important;
-
+color:#333;
 text-decoration:none;
-
 padding:15px;
-
 margin-bottom:10px;
-
 border-radius:8px;
-
-transition:.3s;
-
 border-left:3px solid transparent;
+transition:.3s;
 
 }
 
-
-
-/* Mouse üstüne gelince */
 
 .menu a:hover{
 
-background:#f0f0f0;
-
-color:#333333 !important;
+background:#e5e5e5;
 
 }
 
-
-
-/* Aktif sayfa */
 
 .menu a.active{
 
 background:#eeeeee;
-
-color:#111111 !important;
-
-border-left:3px solid #333333;
-
-}
-
-
-
-/* Mobil */
-
-@media(max-width:800px){
-
-
-.sidebar{
-
-position:relative;
-
-width:100%;
-
-height:auto;
-
-}
-
+border-left:3px solid #333;
 
 }
