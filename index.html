@@ -6,115 +6,527 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AnadoluRay</title>
+<title>M13 Metro Arşivi</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+  .menu a.active{
+
+background:#333333;
+
+color:white;
+
+}
+  
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+
+body{
+
+background:#111111;
+
+color:white;
+
+}
+
+
+
+/* Menü */
+
+.sidebar{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:260px;
+
+height:100vh;
+
+background:#181818;
+
+padding:25px;
+
+}
+
+
+
+.logo{
+
+font-size:24px;
+
+font-weight:bold;
+
+color:#ff4a57;
+
+margin-bottom:35px;
+
+}
+
+
+
+.menu a{
+
+display:block;
+
+color:white;
+
+text-decoration:none;
+
+padding:15px;
+
+margin-bottom:10px;
+
+border-radius:8px;
+
+transition:.3s;
+
+border-left:3px solid transparent;
+
+}
+
+
+.menu a:hover{
+
+background:#2a2a2a;
+
+color:#ff4a57;
+
+}
+
+
+.menu a.active{
+
+background:#333333;
+
+color:white;
+
+border-left:3px solid #ff4a57;
+
+}
+
+
+
+/* İçerik */
+
+
+.content{
+
+margin-left:260px;
+
+padding:40px;
+
+}
+
+
+
+/* Ana başlık */
+
+
+.hero{
+
+padding:20px 0;
+
+margin-bottom:40px;
+
+}
+
+
+
+.hero h1{
+
+font-family:'Montserrat',sans-serif;
+
+font-size:38px;
+
+font-weight:700;
+
+color:white;
+
+margin-bottom:15px;
+
+}
+
+
+
+.hero p{
+
+color:#aaaaaa;
+
+font-size:17px;
+
+line-height:1.6;
+
+}
+
+
+
+
+/* Kartlar */
+
+
+.card-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+
+
+.card{
+
+background:#1a1a1a;
+
+padding:25px;
+
+border-radius:12px;
+
+border:1px solid #2b2b2b;
+
+}
+
+
+
+.card h2{
+
+color:#ff4a57;
+
+font-size:22px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.card p{
+
+color:#aaaaaa;
+
+line-height:1.6;
+
+margin-bottom:8px;
+
+}
+
+
+
+.green{
+
+color:#9acd9a !important;
+
+}
+
+
+
+.gray{
+
+color:#999999 !important;
+
+}
+
+
+
+
+@media(max-width:800px){
+
+
+.sidebar{
+
+position:relative;
+
+width:100%;
+
+height:auto;
+
+}
+
+
+.content{
+
+margin-left:0;
+
+}
+
+
+}
+
+
+</style>
 
 </head>
 
+
 <body>
 
-<div id="sidebar"></div>
 
 
-<main class="content">
-
-<section class="hero">
-
-    <h1>AnadoluRay</h1>
-
-    <p>
-        İstanbul Anadolu Yakası ve çevresindeki raylı sistem projelerini,
-        inşaat süreçlerini ve ulaşım ağlarını takip eden bağımsız arşiv platformu.
-    </p>
-
-</section>
+<div class="sidebar">
 
 
-<section class="box">
+<div class="logo">
 
-<h2>Güncel Durum</h2>
+M13 Arşivi
 
-<div class="cards">
+</div>
+
+
+
+<div class="menu">
+
+
+<a class="active" href="index.html">Ana Sayfa</a>
+
+<a href="guzergah.html">Güzergâh</a>
+
+<a href="istasyonlar.html">İstasyonlar</a>
+
+<a href="insaat.html">Saha Fotoğrafları Arşivi</a>
+
+<a href="tarihce.html">Hattın Tarihçesi</a>
+
+<a href="belgeler.html">Teknik Dökümanlar</a>
+
+<a href="inseski.html">Eski İnşaat Fotoğrafları</a>
+
+  
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="content">
+
+
+
+<div class="hero">
+
+
+<h1>
+
+M13 Yenidoğan - Söğütlüçeşme Metro Hattı
+
+</h1>
+
+
+<p>
+
+İstanbul Anadolu Yakası'nın önemli raylı sistem projelerinden biri.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<h2>
+
+Hat Bilgileri
+
+</h2>
+
+
+<br>
+
+
+
+<div class="card-container">
+
+
 
 <div class="card">
-<h3>İnşa Halindeki Hatlar</h3>
+
+
+<h2>
+
+Hat Uzunluğu
+
+</h2>
+
+
 <p>
-M13 Yenidoğan - Söğütlüçeşme Metro Hattı ve diğer devam eden projeler.
+
+<strong>Toplam:</strong> 24.6 km
+
 </p>
+
+
+<p class="green">
+
+<strong>İnşa halinde:</strong> 6.6 km
+
+</p>
+
+
+<p class="gray">
+
+<strong>Proje halinde:</strong> 18 km
+
+</p>
+
+
 </div>
+
+
+
 
 
 <div class="card">
-<h3>Proje Aşamasındaki Hatlar</h3>
+
+
+<h2>
+
+Teknik Bilgiler
+
+</h2>
+
+
 <p>
-Gelecek dönem planlanan ve geliştirilen raylı sistem projeleri.
+
+<strong>Hat açıklığı:</strong> 1435 mm
+
 </p>
+
+
 </div>
+
+
+
 
 
 <div class="card">
-<h3>İşletmedeki Hatlar</h3>
-<p>
-Hizmet veren metro, tramvay ve raylı sistem hatları.
-</p>
-</div>
-
-</div>
-
-</section>
 
 
+<h2>
 
-<section class="box">
+Yolcu ve Takvim
 
-<h2>Öne Çıkan Projeler</h2>
+</h2>
 
-
-<div class="project">
-
-<h3>M13 Yenidoğan - Söğütlüçeşme Metro Hattı</h3>
 
 <p>
-Durum: İnşa Halinde
+
+<strong>Öngörülen yolcu sayısı (tüm hat):</strong> 425.660
+
 </p>
+
 
 <p>
-Uzunluk: 24,6 km
+
+<strong>Öngörülen açılış tarihi (1. Etap):</strong> 2029
+
 </p>
 
-<p>
-Planlanan Açılış: 2029
-</p>
-
-<a href="#">
-Projeyi İncele →
-</a>
 
 </div>
 
 
-</section>
+
+</div>
 
 
 
-<section class="box">
 
-<h2>AnadoluRay Hakkında</h2>
+
+<br><br>
+
+
+
+<h2>
+
+Son Güncellemeler
+
+</h2>
+
+
+<br>
+
+
+
+
+<div class="card-container">
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+Emek İstasyonu
+
+</h2>
+
 
 <p>
-AnadoluRay, Anadolu Yakası'ndaki raylı sistem hatlarının
-gelişim süreçlerini, teknik bilgilerini, fotoğraf arşivlerini
-ve proje geçmişlerini bir araya getirmeyi amaçlayan dijital bir arşivdir.
+
+14 Temmuz 2026 tarihinde şantiyede vinç ve kamyon sayısında artış gözlemlendiği, TBM montajına yönelik hazırlıkların başladığı bilgisi alınmıştır.
+
 </p>
 
-</section>
+
+</div>
 
 
-</main>
 
 
-<script src="js/main.js"></script>
+
+
+
+<div class="card">
+
+
+<h2>
+
+Aydınlar İstasyonu
+
+</h2>
+
+
+<p>
+
+İstasyon sahasında ot biçme ve zemin hazırlığı çalışmalarının yapıldığı gözlemlenmiştir.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
 
 </body>
 
