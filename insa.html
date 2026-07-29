@@ -1,1 +1,532 @@
+<!DOCTYPE html>
+<html lang="tr">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>İnşa Halinde - AnadoluRay Arşivi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/sidebar.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',Arial,sans-serif;
+}
+
+
+body{
+
+background:#f5f5f5;
+color:#222;
+
+}
+
+
+
+
+/* İçerik */
+
+
+.content{
+
+margin-left:260px;
+padding:40px;
+
+}
+
+
+.hero h1{
+
+font-size:38px;
+margin-bottom:15px;
+
+}
+
+
+.hero p{
+
+color:#666;
+margin-bottom:40px;
+
+}
+
+
+
+/* Hat kutuları */
+
+
+.line{
+
+background:white;
+border:1px solid #ddd;
+border-radius:12px;
+margin-bottom:20px;
+overflow:hidden;
+
+}
+
+
+.line-title{
+
+padding:20px;
+font-size:22px;
+cursor:pointer;
+border-left:4px solid #333;
+background:#fff;
+
+
+}
+
+
+
+.line-title:hover{
+
+background:#eee;
+
+}
+
+
+
+.line-content{
+
+display:none;
+padding:25px;
+
+}
+
+
+
+.line-content.active{
+
+display:flex;
+gap:30px;
+
+}
+
+
+
+.info{
+
+width:45%;
+
+}
+
+
+
+.info p{
+
+margin-bottom:12px;
+line-height:1.6;
+color:#555;
+
+}
+
+
+
+.route{
+
+width:55%;
+
+}
+
+
+
+.route img{
+
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:10px;
+border:1px solid #ddd;
+
+}
+
+
+.route-placeholder{
+
+height:350px;
+background:#e8e8e8;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#777;
+
+}
+
+
+
+@media(max-width:800px){
+
+
+.sidebar{
+
+position:relative;
+width:100%;
+height:auto;
+
+}
+
+
+.content{
+
+margin-left:0;
+
+}
+
+
+.line-content.active{
+
+display:block;
+
+}
+
+
+.info,.route{
+
+width:100%;
+
+}
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+AnadoluRay Arşivi
+</div>
+
+
+
+<div class="menu">
+
+<a href="index.html">Ana Sayfa</a>
+
+<a class="active" href="isletmede.html">İşletmede</a>
+
+<a href="insa.html">İnşa Halinde</a>
+
+<a href="proje.html">Projesi Aşamasında</a>
+
+<a href="fizibilite.html">Ön fizibilite Aşamasında</a>
+
+<a href="iptal.html">İptal&revize edilmiş</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="content">
+
+
+<div class="hero">
+
+<h1>
+İnşa halinde Olan Metro Hatları
+</h1>
+
+<p>
+İstanbul Anadolu Yakası'nda inşaat halindeki metro hatları.
+</p>
+
+
+</div>
+
+
+
+
+<div class="line">
+
+
+<div class="line-title m4" onclick="openLine(this)">
+M4B Tavşantepe - Kaynarca Metro Hattı Uzatması
+</div>
+
+
+<div class="line-content">
+
+
+<div class="info">
+
+<p><b>Fiziki İlerleme:</b>  %87,5</p>
+
+<p><b>Yüklenici:</b> Özgün İnş.</p>
+
+<p><b>Açılış Hedefi:</b>2027 İlk çeyrek</p>
+
+
+<p>
+Kadıköy - Sabiha gökçen Havalimanı Metro Hattının uzatması olarak inşa Edilen Tavşantepe Kaynarca metro Hattı ile birlikte M4 hattı 2 ayrı kola ayrlması bir kolun sabiha gökçen üzerinden Kurtköy Kavşağına diğer kolun ile İçmeler/tuzla belediyesine uzatılması planlanmaktadır
+
+</p>
+
+
+</div>
+
+
+<div class="route">
+
+<div class="route-placeholder">
+Güzergah Fotoğrafı
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="line">
+
+
+<div class="line-title" onclick="openLine(this)">
+M12 Ümraniye - Ataşehir - Göztepe Metro Hattı
+</div>
+
+
+<div class="line-content">
+
+
+<div class="info">
+
+<p><b>Hat Türü:</b> Sürücüsüz Metro</p>
+
+<p><b>İşletmeci:</b> Metro İstanbul</p>
+
+<p><b>Açılış:</b> 2017</p>
+
+<p><b>Uzunluk:</b> 20 km+</p>
+
+<p>
+Anadolu Yakası'nın ilk sürücüsüz metro hattıdır.
+</p>
+
+
+</div>
+
+
+<div class="route">
+
+<div class="route-placeholder">
+Güzergah Fotoğrafı
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="line">
+
+
+<div class="line-title" onclick="openLine(this)">
+M8 Bostancı - Parseller Metro Hattı
+</div>
+
+
+<div class="line-content">
+
+
+<div class="info">
+
+<p><b>Hat Türü:</b> Metro</p>
+
+<p><b>İşletmeci:</b> Metro İstanbul</p>
+
+<p><b>Açılış:</b> 2023</p>
+
+<p><b>Uzunluk:</b> 14,3 km</p>
+
+<p>
+Bostancı bölgesini Dudullu üzerinden kuzey ilçelerine bağlayan metro hattıdır.
+</p>
+
+
+</div>
+
+
+<div class="route">
+
+<div class="route-placeholder">
+Güzergah Fotoğrafı
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="line">
+
+
+<div class="line-title" onclick="openLine(this)">
+M10 Pendik Merkez - Sabiha Gökçen Metro Hattı
+</div>
+
+
+<div class="line-content">
+
+
+<div class="info">
+
+<p><b>Hat Türü:</b> Metro</p>
+
+<p><b>İşletmeci:</b> Metro İstanbul</p>
+
+<p><b>Açılış:</b> 2022</p>
+
+<p>
+Pendik bölgesinden havalimanına ulaşım sağlayan metro bağlantısıdır.
+</p>
+
+
+</div>
+
+
+<div class="route">
+
+<div class="route-placeholder">
+Güzergah Fotoğrafı
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="line">
+
+
+<div class="line-title" onclick="openLine(this)">
+Marmaray Anadolu Yakası Kesimi
+</div>
+
+
+<div class="line-content">
+
+
+<div class="info">
+
+<p><b>Sistem:</b> Banliyö Raylı Sistem</p>
+
+<p><b>İşletmeci:</b> TCDD Taşımacılık</p>
+
+<p><b>Açılış:</b> 2013</p>
+
+<p>
+Asya ve Avrupa yakalarını deniz altından birbirine bağlayan ulaşım sistemidir.
+</p>
+
+
+</div>
+
+
+<div class="route">
+
+<div class="route-placeholder">
+Güzergah Fotoğrafı
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+function openLine(element){
+
+
+let content = element.nextElementSibling;
+
+
+content.classList.toggle("active");
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
