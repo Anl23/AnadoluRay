@@ -6,12 +6,428 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AnadoluRay Arşivi</title>
+<title>İstanbul Anadolu Yakası Metro Arşivi</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/sidebar.css">
-<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+  .menu a.active{
+
+background:#333333;
+
+color:white;
+
+}
+  
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',Arial,sans-serif;
+}
+
+
+body{
+
+background:#f5f5f5;
+
+color:#222;
+
+}
+
+
+
+/* Menü */
+
+.sidebar{
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+width:260px;
+
+height:100vh;
+
+background:white;
+
+padding:25px;
+
+border-right:1px solid #dddddd;
+
+}
+
+
+
+.logo{
+
+font-size:24px;
+
+font-weight:bold;
+
+color:#222;
+
+margin-bottom:35px;
+
+}
+
+
+
+.menu a{
+
+display:block;
+
+color:#333333 !important;
+
+text-decoration:none;
+
+padding:15px;
+
+margin-bottom:10px;
+
+border-radius:8px;
+
+transition:.3s;
+
+border-left:3px solid transparent;
+
+}
+
+
+
+.menu a:hover{
+
+background:#f0f0f0;
+
+color:#333333 !important;
+
+}
+
+
+
+.menu a.active{
+
+background:#eeeeee;
+
+color:#111111 !important;
+
+border-left:3px solid #333333;
+
+}
+
+
+
+/* İçerik */
+
+
+.content{
+
+margin-left:260px;
+
+padding:40px;
+
+}
+
+
+
+/* Ana başlık */
+
+
+.hero{
+
+padding:20px 0;
+
+margin-bottom:40px;
+
+}
+
+
+
+.hero h1{
+
+font-family:'Montserrat',sans-serif;
+
+font-size:38px;
+
+font-weight:700;
+
+color:#222;
+
+margin-bottom:15px;
+
+}
+
+
+
+.hero p{
+
+color:#666;
+
+font-size:17px;
+
+line-height:1.6;
+
+}
+
+
+
+/* Başlıklar */
+
+
+.content > h2{
+
+font-size:28px;
+
+border-left:4px solid #333;
+
+padding-left:12px;
+
+}
+
+
+
+/* Kartlar */
+
+
+.card-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+border:1px solid #dddddd;
+
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+
+}
+
+
+
+.card h2{
+
+color:#222;
+
+font-size:22px;
+
+margin-bottom:15px;
+
+border-left:3px solid #333;
+
+padding-left:10px;
+
+}
+
+
+
+.card p{
+
+color:#555;
+
+line-height:1.6;
+
+margin-bottom:8px;
+
+}
+
+
+
+.green{
+
+color:#3b8f5c !important;
+
+}
+
+
+
+.gray{
+
+color:#777 !important;
+
+}
+
+
+
+/* Mobil */
+
+
+@media(max-width:800px){
+
+
+.sidebar{
+
+position:relative;
+
+width:100%;
+
+height:auto;
+
+}
+
+
+.content{
+
+margin-left:0;
+
+}
+
+
+}
+
+
+
+/* Ana başlık */
+
+
+.hero{
+
+padding:20px 0;
+
+margin-bottom:40px;
+
+}
+
+
+
+.hero h1{
+
+font-family:'Montserrat',sans-serif;
+
+font-size:38px;
+
+font-weight:700;
+
+color:white;
+
+margin-bottom:15px;
+
+}
+
+
+
+.hero p{
+
+color:#aaaaaa;
+
+font-size:17px;
+
+line-height:1.6;
+
+}
+
+
+
+
+/* Kartlar */
+
+
+.card-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+
+
+.card{
+
+background:white;
+
+border:1px solid #dddddd;
+
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+
+}
+
+
+
+.card h2{
+
+color:#222;
+
+font-size:22px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.card p{
+
+color:#555;
+
+line-height:1.6;
+
+margin-bottom:8px;
+
+}
+
+
+
+.green{
+
+color:#9acd9a !important;
+
+}
+
+
+
+.gray{
+
+color:#999999 !important;
+
+}
+
+
+
+
+@media(max-width:800px){
+
+
+.sidebar{
+
+position:relative;
+
+width:100%;
+
+height:auto;
+
+}
+
+
+.content{
+
+margin-left:0;
+
+}
+
+
+}
+
+
+</style>
 
 </head>
 
@@ -34,41 +450,24 @@ AnadoluRay Arşivi
 <div class="menu">
 
 
-<a class="active" href="index.html">
-Ana Sayfa
-</a>
+<a class="active" href="index.html">Ana Sayfa</a>
+
+<a href="isletmede.html">İşletmede</a>
+
+<a href="insa.html">İnşa Halinde</a>
+
+<a href="proje.html">Projesi Aşamasında</a>
+
+<a href="fizibilite.html">Ön fizibilite Aşamasında</a>
+
+<a href="iptal.html">İptal&revize edilmiş</a>
 
 
-<a href="isletmede.html">
-İşletmede
-</a>
-
-
-<a href="insa.html">
-İnşa Halinde
-</a>
-
-
-<a href="proje.html">
-Projesi Aşamasında
-</a>
-
-
-<a href="fizibilite.html">
-Ön Fizibilite Aşamasında
-</a>
-
-
-<a href="iptal.html">
-İptal & Revize Edilmiş
-</a>
-
-
+  
 </div>
 
 
 </div>
-
 
 
 
@@ -77,19 +476,20 @@ Projesi Aşamasında
 <div class="content">
 
 
+
 <div class="hero">
 
 
 <h1>
 
-İstanbul Anadolu Yakası Raylı Sistem Arşivi
+İstanbul Anadolu Yakası Metro Arşivi
 
 </h1>
 
 
 <p>
 
-İstanbul Anadolu Yakası'ndaki metro ve raylı sistem projeleri hakkında güncel bilgiler, teknik detaylar ve proje geçmişi.
+İstanbul Anadolu Yakasındaki tüm hatlarla ilgili bilgi edinme sayfası
 
 </p>
 
@@ -100,17 +500,16 @@ Projesi Aşamasında
 
 
 
-
 <h2>
+
+
 
 Son Güncellemeler
 
 </h2>
 
 
-
 <br>
-
 
 
 
@@ -133,32 +532,7 @@ Son Güncellemeler
 
 <p>
 
-Hat ile ilgili proje süreci ve güncel gelişmeler arşive eklenmiştir.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="card">
-
-
-<h2>
-
-M13 Yenidoğan - Söğütlüçeşme Metro Hattı
-
-</h2>
-
-
-<p>
-
-Hat bilgileri ve geçmiş proje süreci güncellenmiştir.
+Son yayımlanan haritada hattın 
 
 </p>
 
@@ -183,7 +557,7 @@ Aydınlar İstasyonu
 
 <p>
 
-İstasyon bölgesindeki saha çalışmaları ve proje bilgileri güncellenmiştir.
+İstasyon sahasında ot biçme ve zemin hazırlığı çalışmalarının yapıldığı gözlemlenmiştir.
 
 </p>
 
@@ -203,7 +577,6 @@ Aydınlar İstasyonu
 </div>
 
 
-
 </body>
 
-</html>
+</html> bu indexi yeni revizyonumuza göre güncelle
