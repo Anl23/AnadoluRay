@@ -65,30 +65,73 @@ margin-bottom:40px;
 /* Hat kutuları */
 
 
-.line{
-
-background:white;
-border:1px solid #ddd;
-border-radius:12px;
-margin-bottom:20px;
-overflow:hidden;
-
-}
-
-
 .line-title{
 
-padding:20px;
-font-size:22px;
-cursor:pointer;
-border-left:4px solid #333;
-background:#fff;
+display:flex;
+align-items:center;
+gap:12px;
 
+padding:14px 18px;
+font-size:20px;
+cursor:pointer;
+background:#fff;
+color:#222;
+border-left:4px solid #333;
+transition:.2s;
 
 }
 
 
+.line-logo{
 
+width:34px;
+height:34px;
+max-width:34px;
+max-height:34px;
+object-fit:contain;
+flex-shrink:0;
+
+}
+
+
+/* Hat renkleri */
+
+
+.line-title.m4b{
+
+border-left-color:#e91977;
+
+}
+
+
+.line-title.m12{
+
+border-left-color:#672c65;
+
+}
+
+
+.line-title.m14{
+
+border-left-color:#427bbf;
+
+}
+
+
+.line-title.m10{
+
+border-left-color:#65656a;
+
+}
+
+
+.line-title.m13{
+
+border-left-color:#65656a;
+
+}
+
+  
 .line-title:hover{
 
 background:#eee;
@@ -266,7 +309,10 @@ AnadoluRay Arşivi
 <div class="line">
 
 
-<div class="line-title m4" onclick="openLine(this)">
+<div class="line-title m4b" onclick="openLine(this)">
+
+<img src="img/m4b.png" class="line-logo">
+  
 M4B Tavşantepe - Kaynarca Metro Hattı Uzatması
 </div>
 
@@ -314,7 +360,10 @@ Güzergah Fotoğrafı
 <div class="line">
 
 
-<div class="line-title" onclick="openLine(this)">
+<div class="line-title m12" onclick="openLine(this)">
+
+<img src="img/m12.png" class="line-logo">
+  
 M12 Ümraniye - Ataşehir - Göztepe Metro Hattı
 </div>
 
@@ -364,6 +413,9 @@ Güzergah Fotoğrafı
 
 
 <div class="line-title" onclick="openLine(this)">
+
+<img src="img/m14.png" class="line-logo">
+
 M14 Altunizade - Bosna Bulvarı Metro Hattı
 </div>
 
@@ -414,7 +466,10 @@ Güzergah Fotoğrafı
 <div class="line">
 
 
-<div class="line-title" onclick="openLine(this)">
+<div class="line-title m10" onclick="openLine(this)">
+
+<img src="img/m10.png" class="line-logo">
+
 M10 Pendik Merkez - Sabiha Gökçen Hvl. Metro Hattı
 </div>
 
@@ -462,7 +517,10 @@ Güzergah Fotoğrafı
 <div class="line">
 
 
-<div class="line-title" onclick="openLine(this)">
+<div class="line-title m13" onclick="openLine(this)">
+
+<img src="img/m13.png" class="line-logo">
+  
 M13 Yenidoğan - Emek Metro Hattı
 </div>
 
