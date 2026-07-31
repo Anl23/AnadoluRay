@@ -190,37 +190,27 @@ color:#777;
 
 }
 
-.hero{
-
-    position:relative;
-    width:100%;
-    height:350px;
-    overflow:hidden;
-    border-radius:15px;
-    margin-bottom:40px;
-
+.hero {
+    position: relative;    /* Filtrenin (overlay) hero dışına çıkmasını engeller */
+    width: 100%;           /* Genişliği sabitler */
+    overflow: hidden;      /* Resim veya filtre köşelerden taşarsa gizler */
+    border-radius: 8px;    /* Eğer köşeleri oval yapmak istersen taşmayı engellemek için bu şart */
 }
 
-
-.hero img{
-
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;        /* Resmin altında kalan görünmez boşluğu (inline gap) siler */
 }
 
-
-.hero-overlay{
-
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.45);
-
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Bahsettiğin gri filtre (Opacity değerini değiştirebilirsin) */
+    pointer-events: none;  /* Filtrenin altındaki elementlere tıklanabilmesini sağlar */
 }
 
 .hero-content{
