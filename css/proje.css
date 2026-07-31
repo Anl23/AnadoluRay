@@ -39,7 +39,7 @@ padding:40px;
     /* İnşa halindeki banner resmini ve alttan üste kararan filtreyi bağladık */
     background-image: 
         linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.1)), 
-        url('../img/insa-banner.webp'); /* Resim adını kendi dosyana göre (örn: insa-banner.webp) düzenleyebilirsin */
+        url('../img/proje-banner.webp'); /* Resim adını kendi dosyana göre (örn: insa-banner.webp) düzenleyebilirsin */
         
     background-size: cover;
     background-position: center 25%; /* İstasyon içini tam odakta tutar */
@@ -125,10 +125,9 @@ border-left-color:#e91977;
 
 }
 
+.line-title.m5{
 
-.line-title.m12{
-
-border-left-color:#cad300;
+border-left-color:#672c65;
 
 }
 
