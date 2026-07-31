@@ -180,28 +180,20 @@ color:#777;
 
 /* Banner */
 
-.hero {
+..hero {
     position: relative;
-    overflow: hidden; /* İşte sihirli değnek bu! Dışarı taşan köşeleri keser. */
-    border-radius: 12px; /* Şu an sende kaç px tanımlıysa o kalsın */
+    width: 100%;
+    overflow: hidden;      /* Resmin yuvarlatılmış köşelerden taşmasını engeller */
+    border-radius: 12px;   /* Köşelerin ne kadar yuvarlanacağını buradan ayarlayabilirsin */
 }
 
 .hero img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Resmin en boy oranını bozmadan alanı kaplamasını sağlar */
-    display: block;    /* Alt kısımdaki boşlukları sıfırlar */
+    height: auto;
+    display: block;        /* Resmin altındaki görünmez boşluğu yok eder */
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Filtrenin rengi ve koyuluğu */
-}
-
+/* Eğer CSS dosende duruyorsa .hero-overlay kodunu tamamen silebilirsin */
 
 
 .hero-content{
