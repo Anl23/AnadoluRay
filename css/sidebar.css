@@ -1,53 +1,59 @@
 /* Sidebar */
 
-
 .sidebar{
-
-position:fixed;
-left:0;
-top:0;
-width:260px;
-height:100vh;
-background:white;
-padding:25px;
-border-right:1px solid #ddd;
-
+    position:fixed;
+    left:0;
+    top:0;
+    width:260px;
+    height:100vh;
+    background:white;
+    padding:25px;
+    border-right:1px solid #eef0f2; /* Daha soft, modern bir sınır çizgisi */
 }
-
 
 .logo{
-
-font-size:24px;
-font-weight:bold;
-margin-bottom:35px;
-
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:40px;
+    position: relative;
+    letter-spacing: -0.5px;
 }
 
+/* Logonun altına şık bir kırmızı metro rayı çizgisi */
+.logo::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 35px;
+    height: 3px;
+    background: #e91977; /* AnadoluRay kurumsal kırmızısı */
+    border-radius: 2px;
+}
 
 .menu a{
-
-display:block;
-color:#333;
-text-decoration:none;
-padding:15px;
-margin-bottom:10px;
-border-radius:8px;
-border-left:3px solid transparent;
-transition:.1s;
-
+    display:block;
+    color:#444;
+    text-decoration:none;
+    padding:14px 16px;
+    margin-bottom:8px;
+    border-radius:8px;
+    border-left:4px solid transparent;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s ease; /* Sendeki animasyonu tüm elementleri kapsayacak ve daha yumuşak yapacak şekilde güncelledik */
 }
-
 
 .menu a:hover{
-
-background:#e5e5e5;
-
+    background:#f4f5f7; /* Daha temiz ve modern bir gri tonu */
+    color: #000;
+    padding-left: 20px; /* Fare üzerine geldiğinde sağa doğru tatlı bir kayma animasyonu ekledik */
 }
 
-
 .menu a.active{
-
-background:#e5e5e5;
-border-left:3px solid #333;
-
+    background: rgba(233, 25, 119, 0.06); /* Aktif olan butonun arkasına hafif kırmızımsı modern bir fon */
+    border-left: 4px solid #e91977; /* Sol tarafta parlayan aktif hat çizgisi */
+    color: #e91977; /* Aktif sayfanın yazı rengini kırmızı yaparak vurguladık */
+    font-weight: 700;
+    padding-left: 16px; /* Aktifken sağa kaymayı sıfırlayıp sabit tutar */
 }
