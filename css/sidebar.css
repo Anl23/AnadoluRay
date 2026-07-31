@@ -27,7 +27,7 @@
     left: 0;
     width: 35px;
     height: 3px;
-    background: #e91977; /* AnadoluRay kurumsal kırmızısı */
+    background: #000; /* AnadoluRay kurumsal kırmızısı */
     border-radius: 2px;
 }
 
@@ -53,7 +53,7 @@
 .menu a.active{
     background: rgba(233, 25, 119, 0.06); /* Aktif olan butonun arkasına hafif kırmızımsı modern bir fon */
     border-left: 4px solid #e91977; /* Sol tarafta parlayan aktif hat çizgisi */
-    color: #e91977; /* Aktif sayfanın yazı rengini kırmızı yaparak vurguladık */
+    color: #000; /* Aktif sayfanın yazı rengini kırmızı yaparak vurguladık */
     font-weight: 700;
     padding-left: 16px; /* Aktifken sağa kaymayı sıfırlayıp sabit tutar */
 }
