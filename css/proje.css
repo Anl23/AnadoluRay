@@ -1,1 +1,269 @@
+<style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',Arial,sans-serif;
+}
+
+
+body{
+
+background:#f5f5f5;
+color:#222;
+
+}
+
+
+
+
+/* İçerik */
+
+
+.content{
+
+margin-left:260px;
+padding:40px;
+
+}
+
+
+/* Banner */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 320px; /* Diğer sayfayla birebir aynı yükseklik */
+    
+    /* İnşa halindeki banner resmini ve alttan üste kararan filtreyi bağladık */
+    background-image: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.1)), 
+        url('../img/insa-banner.webp'); /* Resim adını kendi dosyana göre (örn: insa-banner.webp) düzenleyebilirsin */
+        
+    background-size: cover;
+    background-position: center 25%; /* İstasyon içini tam odakta tutar */
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 25px; /* Altındaki metro kutularıyla yapışmasını engeller */
+}
+
+.hero-content {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    z-index: 2;
+    color: white;
+    /* Beyaz yazılar filtrenin üstünde cam gibi okunsun diye gölge */
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); 
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: white; /* Siyah rengi beyaz yaptık */
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #f0f0f0;
+    font-weight: 600;
+    margin-bottom: 0; /* Eski kodundaki 40px'lik gereksiz boşluğu sıfırladık */
+}
+
+
+
+/* Hat kutuları */
+
+
+.line-title{
+
+display:flex;
+align-items:center;
+gap:12px;
+
+padding:14px 18px;
+font-size:20px;
+cursor:pointer;
+background:#fff;
+color:#222;
+border-left:4px solid #333;
+transition:.2s;
+
+}
+
+
+.line-logo{
+
+width:34px;
+height:34px;
+max-width:34px;
+max-height:34px;
+object-fit:contain;
+flex-shrink:0;
+
+}
+
+.line{
+
+background:white;
+border:1px solid #ddd;
+border-radius:10px;
+margin-bottom:12px;
+overflow:hidden;
+
+}
+
+
+/* Hat renkleri */
+
+
+.line-title.m4{
+
+border-left-color:#e91977;
+
+}
+
+
+.line-title.m12{
+
+border-left-color:#cad300;
+
+}
+
+
+.line-title.m14{
+
+border-left-color:#b16400;
+
+}
+
+
+.line-title.m10{
+
+border-left-color:#4da93e;
+
+}
+
+
+.line-title.m13{
+
+border-left-color:#ff4b58;
+
+}
+
+  
+.line-title:hover{
+
+background:#eee;
+
+}
+
+
+
+.line-content{
+
+display:none;
+padding:25px;
+
+}
+
+
+
+.line-content.active{
+
+display:flex;
+gap:30px;
+
+}
+
+
+
+.info{
+
+width:45%;
+
+}
+
+
+
+.info p{
+
+margin-bottom:12px;
+line-height:1.6;
+color:#555;
+
+}
+
+
+
+.route{
+
+width:55%;
+
+}
+
+
+
+.route img{
+
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:10px;
+border:1px solid #ddd;
+
+}
+
+
+.route-placeholder{
+
+height:350px;
+background:#e8e8e8;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#777;
+
+}
+
+
+
+@media(max-width:800px){
+
+
+.sidebar{
+
+position:relative;
+width:100%;
+height:auto;
+
+}
+
+
+.content{
+
+margin-left:0;
+
+}
+
+
+.line-content.active{
+
+display:block;
+
+}
+
+
+.info,.route{
+
+width:100%;
+
+}
+
+}
+
+
+</style>
