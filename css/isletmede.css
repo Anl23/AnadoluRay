@@ -180,47 +180,49 @@ color:#777;
 
 /* Banner */
 
-..hero {
+/* Banner */
+
+.hero {
     position: relative;
     width: 100%;
-    overflow: hidden;      /* Resmin yuvarlatılmış köşelerden taşmasını engeller */
-    border-radius: 12px;   /* Köşelerin ne kadar yuvarlanacağını buradan ayarlayabilirsin */
+    height: 380px; /* Banner yüksekliğini buradan tek yerden kolayca ayarlayabilirsin */
+    
+    /* Resim komutu: HTML'den resmi sildiğimiz için buraya ekliyoruz */
+    background-image: url('../img/banner.webp'); 
+    background-size: cover;       /* Resmi kırpmadan/bozmadan alanı kaplatır */
+    background-position: center;  /* Resmi tam ortalar */
+    
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 25px; /* Altındaki metro kutularıyla yapışık olmasın diye boşluk */
+    
+    /* Yazıların okunması için filtre yerine modern, sadece alt tarafta kararma yapan gölge efektli resim komutu */
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.15); 
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;        /* Resmin altındaki görünmez boşluğu yok eder */
+/* NOT: .hero img komutunu tamamen sildik, artık arka plan olarak çalışıyor */
+
+.hero-content {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    z-index: 2;
+    color: white;
+    /* Yazıların arkasına hafif bir gölge atarak okunabilirliği zirveye çıkardık */
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); 
 }
 
-/* Eğer CSS dosende duruyorsa .hero-overlay kodunu tamamen silebilirsin */
-
-
-.hero-content{
-
-position:absolute;
-left:50px;
-bottom:50px;
-z-index:2;
-color:white;
-
+.hero-content h1 {
+    font-size: 42px; /* Mobilde patlamasın diye ideal boyuta çektim */
+    font-weight: 700;
+    margin-bottom: 8px;
 }
 
-
-.hero-content h1{
-
-font-size:52px;
-margin-bottom:10px;
-font-family:'Montserrat',sans-serif;
-
-}
-
-
-.hero-content p{
-
-font-size:22px;
-color:#e6e6e6;
-
+.hero-content p {
+    font-size: 18px;
+    color: #f0f0f0;
+    font-weight: 600;
 }
 
 
