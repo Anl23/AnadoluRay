@@ -189,8 +189,8 @@ color:#777;
     
     /* Resim komutu: HTML'den resmi sildiğimiz için buraya ekliyoruz */
     background-image: url('../img/banner.webp'); 
-    background-size: cover;       /* Resmi kırpmadan/bozmadan alanı kaplatır */
-    background-position: center;  /* Resmi tam ortalar */
+    background-size: cover;
+    background-position: center bottom;  /* Resmi tam ortalar */
     
     border-radius: 12px;
     overflow: hidden;
