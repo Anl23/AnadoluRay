@@ -180,41 +180,26 @@ color:#777;
 
 /* Banner */
 
-.hero{
-
-position:relative;
-width:100%;
-height:350px;
-overflow:hidden;
-border-radius:15px;
-margin-bottom:40px;
-
+.hero {
+    position: relative;
+    overflow: hidden; /* İşte sihirli değnek bu! Dışarı taşan köşeleri keser. */
+    border-radius: 12px; /* Şu an sende kaç px tanımlıysa o kalsın */
 }
 
-
-.hero img{
-
-width:100%;
-height:100%;
-object-fit:cover;
-display:block;
-
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmin en boy oranını bozmadan alanı kaplamasını sağlar */
+    display: block;    /* Alt kısımdaki boşlukları sıfırlar */
 }
 
-
-.hero-overlay{
-
-position:absolute;
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-background:rgba(0,0,0,.45);
-
-pointer-events:none;
-
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Filtrenin rengi ve koyuluğu */
 }
 
 
