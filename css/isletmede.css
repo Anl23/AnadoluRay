@@ -185,18 +185,16 @@ color:#777;
 .hero {
     position: relative;
     width: 100%;
-    height: 380px; /* Banner yüksekliğini buradan tek yerden kolayca ayarlayabilirsin */
+    height: 320px; /* Orantının düzelmesi için yüksekliği biraz kısalttık */
     
-    /* Resim komutu: HTML'den resmi sildiğimiz için buraya ekliyoruz */
     background-image: url('../img/banner.webp'); 
-    background-size: 100% 100%; /* Resmi kutunun boyutuna zorla sığdırır */
-    background-position: center;
+    background-size: cover;       /* Resmin oranını asla bozmaz, kutuyu doldurur */
+    background-position: center 25%; /* Resmi hafifçe yukarı kaydırarak istasyon peronunu tam odakta tutar */
     
     border-radius: 12px;
     overflow: hidden;
-    margin-bottom: 25px; /* Altındaki metro kutularıyla yapışık olmasın diye boşluk */
+    margin-bottom: 25px;
     
-    /* Yazıların okunması için filtre yerine modern, sadece alt tarafta kararma yapan gölge efektli resim komutu */
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.15); 
 }
