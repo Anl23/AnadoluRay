@@ -1,0 +1,269 @@
+/* =========================
+   MOBİL TASARIM
+========================= */
+
+
+/* Genel */
+
+@media(max-width:768px){
+
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* İçerik */
+
+.content{
+
+    margin-left:0;
+
+    padding:20px;
+
+    padding-top:75px;
+
+}
+
+
+
+.hero{
+
+    margin-top:0;
+
+}
+
+
+
+/* Başlıklar */
+
+.hero h1{
+
+    font-size:28px;
+
+    line-height:1.2;
+
+}
+
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+
+
+/* Kartlar */
+
+.line{
+
+    width:100%;
+
+}
+
+
+
+/* Resimler */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+
+
+/* =========================
+   MOBİL ÜST BAR
+========================= */
+
+
+.mobile-bar{
+
+    display:flex;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:60px;
+
+    background:white;
+
+    align-items:center;
+
+    padding-left:15px;
+
+    gap:10px;
+
+    z-index:2000;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+
+/* Hamburger */
+
+.menu-toggle{
+
+    width:45px;
+
+    height:45px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    background:white;
+
+    border:none;
+
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    color:#000;
+
+
+}
+
+
+
+/* Tema */
+
+.theme-toggle{
+
+
+    width:45px;
+
+    height:45px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    background:white;
+
+    border:none;
+
+
+    font-size:22px;
+
+    cursor:pointer;
+
+
+    color:#000;
+
+
+}
+
+
+
+/* Açılan hat içerikleri */
+
+.line-content.active{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+/* Açıklama */
+
+.info{
+
+    width:100%;
+
+    order:1;
+
+}
+
+
+
+/* Güzergah */
+
+.route{
+
+    width:100%;
+
+    order:2;
+
+    margin-top:25px;
+
+}
+
+
+
+.route img{
+
+    width:100%;
+
+    height:auto;
+
+    max-height:500px;
+
+    object-fit:contain;
+
+}
+
+
+
+}
+
+
+
+
+
+/* Küçük telefonlar */
+
+@media(max-width:480px){
+
+
+.content{
+
+    padding:15px;
+
+    padding-top:75px;
+
+}
+
+
+.hero h1{
+
+    font-size:24px;
+
+}
+
+
+.hero p{
+
+    font-size:14px;
+
+}
+
+
+}
