@@ -1,59 +1,305 @@
-/* Sidebar */
+/* =========================
+   SIDEBAR
+========================= */
+
 
 .sidebar{
+
     position:fixed;
+
     left:0;
     top:0;
+
     width:260px;
+
     height:100vh;
+
     background:white;
+
     padding:25px;
-    border-right:1px solid #eef0f2; /* Daha soft, modern bir sınır çizgisi */
+
+    border-right:1px solid #eef0f2;
+
+    transition:0.3s ease;
+
+    z-index:1000;
+
 }
+
+
+
+/* Logo */
+
 
 .logo{
+
     font-size:24px;
+
     font-weight:700;
+
     margin-bottom:40px;
-    position: relative;
-    letter-spacing: -0.5px;
+
+    position:relative;
+
+    letter-spacing:-0.5px;
+
 }
 
-/* Logonun altına şık bir kırmızı metro rayı çizgisi */
-.logo::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 35px;
-    height: 3px;
-    background: #000; /* AnadoluRay kurumsal kırmızısı */
-    border-radius: 2px;
+
+
+.logo::after{
+
+    content:'';
+
+    position:absolute;
+
+    bottom:-10px;
+
+    left:0;
+
+    width:35px;
+
+    height:3px;
+
+    background:#cecece;
+
+    border-radius:2px;
+
 }
+
+
+
+/* Hamburger ve tema tuşları */
+
+.menu-toggle,
+.theme-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+
+
+/* Menü */
+
 
 .menu a{
+
     display:block;
+
     color:#444;
+
     text-decoration:none;
+
     padding:14px 16px;
+
     margin-bottom:8px;
+
     border-radius:8px;
+
     border-left:4px solid transparent;
-    font-weight: 600;
-    font-size: 15px;
-    transition: all 0.2s ease; /* Sendeki animasyonu tüm elementleri kapsayacak ve daha yumuşak yapacak şekilde güncelledik */
+
+    font-weight:600;
+
+    font-size:15px;
+
+    transition:.2s ease;
+
 }
+
+
 
 .menu a:hover{
-    background:#f4f5f7; /* Daha temiz ve modern bir gri tonu */
-    color: #000;
-    padding-left: 20px; /* Fare üzerine geldiğinde sağa doğru tatlı bir kayma animasyonu ekledik */
+
+    background:#f4f5f7;
+
+    color:#000;
+
+    padding-left:20px;
+
 }
 
+
+
 .menu a.active{
-    background: rgba(233, 25, 119, 0.06); /* Aktif olan butonun arkasına hafif kırmızımsı modern bir fon */
-    border-left: 4px solid #e91977; /* Sol tarafta parlayan aktif hat çizgisi */
-    color: #000; /* Aktif sayfanın yazı rengini kırmızı yaparak vurguladık */
-    font-weight: 700;
-    padding-left: 16px; /* Aktifken sağa kaymayı sıfırlayıp sabit tutar */
+
+    background:#cecece;
+
+    border-left:4px solid #605b5d;
+
+    color:#000;
+
+    font-weight:700;
+
+    padding-left:16px;
+
+}
+
+
+
+/* =========================
+   MOBİL
+========================= */
+
+
+@media(max-width:768px){
+
+
+
+/* Sidebar kapalı */
+
+.sidebar{
+
+    left:-280px;
+
+    width:260px;
+
+    height:100vh;
+
+}
+
+
+
+/* Sidebar açılınca */
+
+
+.sidebar.active{
+
+    left:0;
+
+}
+
+
+
+/* Logo */
+
+
+.logo{
+
+    margin-top:45px;
+
+    font-size:22px;
+
+}
+
+
+
+/* Menü */
+
+
+.menu{
+
+    display:block;
+
+}
+
+
+
+/* Linkler */
+
+
+.menu a{
+
+    white-space:normal;
+
+}
+
+
+
+
+
+/* Mobil üst bar */
+
+.mobile-bar{
+
+    display:flex;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:60px;
+
+    background:white;
+
+    align-items:center;
+
+    padding-left:15px;
+
+    gap:10px;
+
+    z-index:2000;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+
+/* Hamburger */
+
+.menu-toggle{
+
+    display:flex;
+
+    width:45px;
+
+    height:45px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:white;
+
+    border:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    color:#000;
+
+}
+
+
+
+/* Tema */
+
+.theme-toggle{
+
+    display:flex;
+
+    width:45px;
+
+    height:45px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:white;
+
+    border:none;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    color:#000;
+
+}
+
+
+
 }
