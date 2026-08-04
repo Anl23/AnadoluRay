@@ -50,8 +50,20 @@ themeButtons.forEach(button => {
 
 
 
-if(localStorage.getItem("theme") === "dark"){
+// Kayıtlı tema varsa onu kullan
+const savedTheme = localStorage.getItem("theme");
 
-    document.body.classList.add("dark");
+if (savedTheme) {
+
+    document.body.classList.toggle("dark", savedTheme === "dark");
+
+} else {
+
+    // İlk girişte cihaz temasını kullan
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+
+        document.body.classList.add("dark");
+
+    }
 
 }
