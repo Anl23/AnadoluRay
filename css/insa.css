@@ -233,37 +233,35 @@ color:#777;
 
 @media(max-width:800px){
 
-
 .sidebar{
 
-position:relative;
-width:100%;
-height:auto;
+    position:fixed;
+    left:-280px;
+    top:0;
+
+    width:260px;
+    height:100vh;
+
+    background:white;
+
+    transition:.3s ease;
+    z-index:1000;
+
+}
+
+
+.sidebar.active{
+
+    left:0;
 
 }
 
 
 .content{
 
-margin-left:0;
-
-}
-
-
-.line-content.active{
-
-display:block;
-
-}
-
-
-.info,.route{
-
-width:100%;
+    margin-left:0;
+    padding:20px;
 
 }
 
 }
-
-
-</style>
