@@ -1,0 +1,225 @@
+/* =========================
+   DARK MODE
+========================= */
+
+
+/* Genel */
+
+.dark{
+
+    background:#121212;
+    color:white;
+
+}
+
+
+/* Sayfa */
+
+.dark body{
+
+    background:#121212;
+    color:white;
+
+}
+
+
+/* İçerik */
+
+.dark .content{
+
+    background:#121212;
+
+}
+
+
+
+/* Sidebar */
+
+.dark .sidebar{
+
+    background:#1b1b1b;
+    border-color:#333;
+
+}
+
+
+.dark .logo{
+
+    color:white;
+
+}
+
+
+
+/* Menü */
+
+.dark .menu a{
+
+    color:#ddd;
+
+}
+
+
+.dark .menu a:hover{
+
+    background:#2a2a2a;
+    color:white;
+
+}
+
+
+.dark .menu a.active{
+
+    background:#7e7e7e;
+    color:white;
+
+}
+
+
+
+/* Kartlar */
+
+.dark .card,
+.dark .line,
+.dark .line-content{
+
+    background:#1e1e1e;
+    color:white;
+    border-color:#333;
+
+}
+
+
+
+/* Hat başlıkları */
+
+.dark .line-title{
+
+    background:#1e1e1e;
+    color:white;
+
+    /* Hat renklerini ezmemesi için */
+    border-left-color:inherit;
+
+}
+
+
+
+.dark .line-title:hover{
+
+    background:#252525;
+    color:white;
+
+}
+
+
+
+.dark .line-title.active{
+
+    background:#1e1e1e;
+    color:white;
+
+}
+
+
+
+/* Hat renkleri */
+
+.dark .line-title.m4{
+
+    border-left-color:#e91977;
+
+}
+
+
+.dark .line-title.m5{
+
+    border-left-color:#672c65;
+
+}
+
+
+.dark .line-title.m8{
+
+    border-left-color:#0099ff;
+
+}
+
+
+.dark .line-title.m10{
+
+    border-left-color:#4da93e;
+
+}
+
+
+.dark .line-title.m13{
+
+    border-left-color:#ff4b58;
+
+}
+
+
+.dark .line-title.m14{
+
+    border-left-color:#b16400;
+
+}
+
+
+.dark .line-title.marmaray{
+
+    border-left-color:#008c95;
+
+}
+
+
+.dark .line-title.t{
+
+    border-left-color:#555;
+
+}
+
+
+.dark .line-title.m{
+
+    border-left-color:#555;
+
+}
+
+
+
+/* Açıklamalar */
+
+.dark .info p{
+
+    color:#ccc;
+
+}
+
+
+
+/* Mobil üst bar */
+
+.dark .theme-toggle{
+
+    background:#1b1b1b !important;
+    color:white !important;
+
+}
+
+
+.dark .menu-toggle{
+
+    background:#1b1b1b !important;
+    color:white !important;
+
+}
+
+
+.dark .mobile-bar{
+
+    background:#1b1b1b !important;
+    border-color:#333 !important;
+
+}
