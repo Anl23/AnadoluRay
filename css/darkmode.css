@@ -70,7 +70,7 @@
 
 .dark .menu a.active{
 
-    background:#7e7e7e;
+    background:#444;
     color:white;
 
 }
@@ -98,11 +98,7 @@
     background:#1e1e1e;
     color:white;
 
-    /* Hat renklerini ezmemesi için */
-    border-left-color:inherit;
-
 }
-
 
 
 .dark .line-title:hover{
@@ -113,83 +109,44 @@
 }
 
 
-
-.dark .line-title.active{
-
-    background:#1e1e1e;
-    color:white;
-
-}
-
-
-
-/* Hat renkleri */
+/* Hat renkleri korunur */
 
 .dark .line-title.m4{
-
     border-left-color:#e91977;
-
 }
-
 
 .dark .line-title.m5{
-
     border-left-color:#672c65;
-
 }
-
 
 .dark .line-title.m8{
-
     border-left-color:#0099ff;
-
 }
-
 
 .dark .line-title.m10{
-
     border-left-color:#4da93e;
-
 }
-
 
 .dark .line-title.m13{
-
     border-left-color:#ff4b58;
-
 }
-
 
 .dark .line-title.m14{
-
     border-left-color:#b16400;
-
 }
-
 
 .dark .line-title.marmaray{
-
     border-left-color:#008c95;
-
 }
 
-
-.dark .line-title.t{
-
-    border-left-color:#555;
-
-}
-
-
+.dark .line-title.t,
 .dark .line-title.m{
-
-    border-left-color:#555;
-
+    border-left-color:#777;
 }
 
 
 
-/* Açıklamalar */
+/* Yazılar */
 
 .dark .info p{
 
@@ -198,17 +155,32 @@
 }
 
 
+.dark .hero h1{
 
-/* Mobil üst bar */
-
-.dark .theme-toggle{
-
-    background:#1b1b1b !important;
-    color:white !important;
+    color:white;
 
 }
 
 
+.dark .hero p{
+
+    color:#aaa;
+
+}
+
+
+
+/* Mobil bar */
+
+.dark .mobile-bar{
+
+    background:#1b1b1b !important;
+    border-color:#333 !important;
+
+}
+
+
+.dark .theme-toggle,
 .dark .menu-toggle{
 
     background:#1b1b1b !important;
@@ -217,12 +189,9 @@
 }
 
 
-.dark .mobile-bar{
 
-    background:#1b1b1b !important;
-    border-color:#333 !important;
+/* Masaüstü tema tuşu */
 
-}
 .dark .desktop-theme{
 
     background:#1b1b1b;
@@ -230,6 +199,7 @@
     border-color:#333;
 
 }
+
 
 .dark .desktop-theme:hover{
 
