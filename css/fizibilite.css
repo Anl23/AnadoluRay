@@ -233,36 +233,68 @@ color:#777;
 @media(max-width:800px){
 
 
-.sidebar{
-
-position:relative;
-width:100%;
-height:auto;
-
-}
-
-
 .content{
 
-margin-left:0;
+    margin-left:0;
+    padding:20px;
 
 }
 
 
 .line-content.active{
 
-display:block;
+    display:block;
 
 }
 
 
 .info,.route{
 
-width:100%;
+    width:100%;
 
 }
 
+
+/* Hamburger sidebar */
+
+.sidebar{
+
+    position:fixed;
+    left:-280px;
+    top:0;
+
+    width:260px;
+    height:100vh;
+
+    background:white;
+
+    transition:.3s ease;
+
+    z-index:1000;
+
 }
 
 
-</style>
+.sidebar.active{
+
+    left:0;
+
+}
+
+
+
+.menu-toggle{
+
+    display:block;
+
+    position:fixed;
+
+    top:15px;
+    left:15px;
+
+    z-index:1200;
+
+}
+
+
+}
