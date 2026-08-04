@@ -69,10 +69,11 @@
 
 
 
-/* Hamburger ve tema tuşları */
+/* Genel buton ayarları */
+
 
 .menu-toggle,
-.theme-toggle{
+.mobile-bar .theme-toggle{
 
     display:none;
 
@@ -81,6 +82,58 @@
     border:none;
 
     cursor:pointer;
+
+}
+
+
+
+/* Masaüstü tema butonu */
+
+
+.desktop-theme{
+
+    position:fixed;
+
+    top:20px;
+
+    left:280px;
+
+
+    width:48px;
+
+    height:48px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    background:white;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+
+    font-size:22px;
+
+    cursor:pointer;
+
+
+    z-index:1500;
+
+    transition:.2s;
+
+}
+
+
+
+.desktop-theme:hover{
+
+    background:#f5f5f5;
 
 }
 
@@ -97,17 +150,21 @@
 
     text-decoration:none;
 
+
     padding:14px 16px;
 
     margin-bottom:8px;
+
 
     border-radius:8px;
 
     border-left:4px solid transparent;
 
+
     font-weight:600;
 
     font-size:15px;
+
 
     transition:.2s ease;
 
@@ -143,6 +200,8 @@
 
 
 
+
+
 /* =========================
    MOBİL
 ========================= */
@@ -153,6 +212,7 @@
 
 
 /* Sidebar kapalı */
+
 
 .sidebar{
 
@@ -166,7 +226,7 @@
 
 
 
-/* Sidebar açılınca */
+/* Açık sidebar */
 
 
 .sidebar.active{
@@ -201,9 +261,6 @@
 
 
 
-/* Linkler */
-
-
 .menu a{
 
     white-space:normal;
@@ -212,9 +269,8 @@
 
 
 
-
-
 /* Mobil üst bar */
+
 
 .mobile-bar{
 
@@ -222,15 +278,19 @@
 
     position:fixed;
 
+
     top:0;
 
     left:0;
+
 
     width:100%;
 
     height:60px;
 
+
     background:white;
+
 
     align-items:center;
 
@@ -238,7 +298,9 @@
 
     gap:10px;
 
+
     z-index:2000;
+
 
     border-bottom:1px solid #eee;
 
@@ -248,24 +310,30 @@
 
 /* Hamburger */
 
+
 .menu-toggle{
 
     display:flex;
 
+
     width:45px;
 
     height:45px;
+
 
     align-items:center;
 
     justify-content:center;
 
+
     background:white;
 
     border:none;
+
 
     font-size:28px;
 
+
     cursor:pointer;
 
     color:#000;
@@ -274,65 +342,49 @@
 
 
 
-/* Tema */
+/* Mobil tema */
 
-.theme-toggle{
+
+.mobile-bar .theme-toggle{
+
 
     display:flex;
+
 
     width:45px;
 
     height:45px;
 
+
     align-items:center;
 
     justify-content:center;
 
+
     background:white;
+
 
     border:none;
 
+
     font-size:22px;
 
+
     cursor:pointer;
+
 
     color:#000;
 
 }
-/* Masaüstü tema butonu */
+
+
+
+/* Masaüstü tuşunu mobilde kapat */
+
 
 .desktop-theme{
 
-    position:fixed;
-
-    top:20px;
-    left:280px;
-
-    width:48px;
-    height:48px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    background:white;
-
-    border:1px solid #ddd;
-    border-radius:12px;
-
-    font-size:22px;
-
-    cursor:pointer;
-
-    z-index:1500;
-
-    transition:.2s;
-
-}
-
-.desktop-theme:hover{
-
-    background:#f5f5f5;
+    display:none;
 
 }
 
