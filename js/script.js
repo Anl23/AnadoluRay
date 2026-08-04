@@ -22,7 +22,31 @@ if(menuToggle && sidebar){
     });
 
 }
+
+
+// Tema sistemi
+
 const themeButtons = document.querySelectorAll(".theme-toggle");
+
+
+function updateThemeIcon(){
+
+    themeButtons.forEach(button=>{
+
+        if(document.body.classList.contains("dark")){
+
+            button.textContent = "☀️";
+
+        }else{
+
+            button.textContent = "🌙";
+
+        }
+
+    });
+
+}
+
 
 
 themeButtons.forEach(button => {
@@ -44,26 +68,41 @@ themeButtons.forEach(button => {
         }
 
 
+        updateThemeIcon();
+
+
     });
 
 });
 
 
 
-// Kayıtlı tema varsa onu kullan
+
+// Kayıtlı tema varsa kullan
+
 const savedTheme = localStorage.getItem("theme");
 
-if (savedTheme) {
+
+if(savedTheme){
 
     document.body.classList.toggle("dark", savedTheme === "dark");
 
-} else {
 
-    // İlk girişte cihaz temasını kullan
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+}else{
+
+
+    // Cihaz temasını kullan
+
+    if(window.matchMedia("(prefers-color-scheme: dark)").matches){
 
         document.body.classList.add("dark");
 
     }
 
+
 }
+
+
+// Açılışta ikonu ayarla
+
+updateThemeIcon();
