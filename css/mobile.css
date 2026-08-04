@@ -267,3 +267,12 @@ img{
 
 
 }
+@media(max-width:768px){
+
+    .desktop-theme{
+
+        display:none;
+
+    }
+
+}
