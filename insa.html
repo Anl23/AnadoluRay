@@ -9,24 +9,74 @@
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/insa.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+
 </head>
 
 <body>
 
-    <div class="sidebar">
-        <div class="logo">
-            AnadoluRay Arşivi
-        </div>
-        <div class="menu">
-            <a href="index.html">Ana Sayfa</a>
-            <a href="isletmede.html">İşletmede</a>
-            <a class="active" href="insa.html">İnşa Halinde</a>
-            <a href="proje.html">Proje Aşamasında</a>
-            <a href="fizibilite.html">Ön Fizibilite Aşamasında</a>
-            <a href="iptal.html">İptal & Revize Edilmiş</a>
-        </div>
-    </div>
+
+<div class="mobile-bar">
+
+<button class="menu-toggle">
+☰
+</button>
+
+<button class="theme-toggle">
+🌙
+</button>
+
+</div>
+
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+AnadoluRay Arşivi
+</div>
+
+
+
+<div class="menu">
+
+
+<a href="index.html">
+Ana Sayfa
+</a>
+
+
+<a href="isletmede.html">
+İşletmede
+</a>
+
+
+<a class="active" href="insa.html">
+İnşa Halinde
+</a>
+
+
+<a href="proje.html">
+Proje Aşamasında
+</a>
+
+
+<a href="fizibilite.html">
+Ön Fizibilite Aşamasında
+</a>
+
+
+<a href="iptal.html">
+İptal & Revize Edilmiş
+</a>
+
+
+</div>
+
+
+</div>
 
     <div class="content">
 
@@ -143,7 +193,13 @@
 
     </div>
 
-   
+    <script>
+        function openLine(element) {
+            let content = element.nextElementSibling;
+            content.classList.toggle("active");
+        }
+    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
