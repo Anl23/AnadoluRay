@@ -223,3 +223,16 @@
     border-color:#333 !important;
 
 }
+.dark .desktop-theme{
+
+    background:#1b1b1b;
+    color:white;
+    border-color:#333;
+
+}
+
+.dark .desktop-theme:hover{
+
+    background:#2a2a2a;
+
+}
