@@ -277,3 +277,16 @@ font-size: 0.95rem;
 color: #555555;
 line-height: 1.5;
 }
+.stat-logo {
+height: 18px;
+width: auto;
+vertical-align: middle;
+margin-right: 6px;
+}
+
+.line-logos {
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+gap: 8px;
+}
