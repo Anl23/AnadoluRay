@@ -3,47 +3,8 @@
 ========================= */
 
 
-/* Masaüstü tema butonu */
-
-.desktop-theme{
-
-    position:fixed;
-
-    top:20px;
-    left:280px;
-
-    width:48px;
-    height:48px;
-
-    display:flex;
-
-    align-items:center;
-    justify-content:center;
-
-    background:white;
-
-    border:1px solid #ddd;
-
-    border-radius:12px;
-
-    font-size:22px;
-
-    cursor:pointer;
-
-    z-index:1500;
-
-    transition:.2s;
-
-}
-
-
-.desktop-theme:hover{
-
-    background:#f5f5f5;
-
-}
-
-
+/* UYARI: Masaüstü tema butonu sidebar.css'de tanımlanmıştır */
+/* Burada masaüstü düzenlemesi yapılmayacak */
 
 
 @media(max-width:768px){
@@ -193,7 +154,9 @@ img{
 
     background:white;
 
-    border:none;
+    border:1px solid #ddd;
+
+    border-radius:12px;
 
     font-size:22px;
 
@@ -285,19 +248,5 @@ img{
 
 }
 
-
-}
-
-
-
-/* Mobilde masaüstü tuşu gizli */
-
-@media(max-width:768px){
-
-    .desktop-theme{
-
-        display:none;
-
-    }
 
 }
