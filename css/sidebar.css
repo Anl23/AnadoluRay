@@ -14,7 +14,7 @@ display:flex;
 align-items:center;
 justify-content:flex-end;
 padding:0 25px;
-z-index:2000;
+z-index:1000;
 box-sizing:border-box;
 }
 
@@ -25,15 +25,17 @@ SIDEBAR
 .sidebar{
 position:fixed;
 left:0;
-top:60px;
+top:0;
 width:260px;
-height:calc(100vh - 60px);
+height:100vh;
 background:white;
 padding:25px;
 border-right:1px solid #eef0f2;
 transition:0.3s ease;
-z-index:1000;
+z-index:2000;
 box-sizing:border-box;
+overflow-y:auto;
+padding-top:25px;
 }
 
 /* Logo */
@@ -129,6 +131,7 @@ top:0;
 left:-280px;
 width:260px;
 height:100vh;
+padding-top:25px;
 }
 
 /* Açık sidebar */
