@@ -5,8 +5,8 @@
 .top-bar{
 position:fixed;
 top:0;
-left:0;
-width:100%;
+left:260px;
+width:calc(100% - 260px);
 height:60px;
 background:white;
 border-bottom:1px solid #eef0f2;
@@ -35,7 +35,6 @@ transition:0.3s ease;
 z-index:2000;
 box-sizing:border-box;
 overflow-y:auto;
-padding-top:25px;
 }
 
 /* Logo */
@@ -207,7 +206,7 @@ display:none;
 }
 
 /* =========================
-   DARK MODE
+DARK MODE
 ========================= */
 
 .dark .top-bar{
