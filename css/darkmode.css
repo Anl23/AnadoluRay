@@ -33,50 +33,6 @@
 
 
 
-/* Sidebar */
-
-.dark .sidebar{
-
-    background:#1b1b1b;
-    border-color:#333;
-
-}
-
-
-.dark .logo{
-
-    color:white;
-
-}
-
-
-
-/* Menü */
-
-.dark .menu a{
-
-    color:#ddd;
-
-}
-
-
-.dark .menu a:hover{
-
-    background:#2a2a2a;
-    color:white;
-
-}
-
-
-.dark .menu a.active{
-
-    background:#444;
-    color:white;
-
-}
-
-
-
 /* Kartlar */
 
 .dark .card,
@@ -135,6 +91,10 @@
     border-left-color:#b16400;
 }
 
+.dark .line-title.m12{
+    border-left-color:#cad300;
+}
+
 .dark .line-title.marmaray{
     border-left-color:#008c95;
 }
@@ -150,7 +110,14 @@
 
 .dark .info p{
 
-    color:#ccc;
+    color:#ddd;
+
+}
+
+.dark .info p b{
+
+    color:#fff;
+    font-weight:700;
 
 }
 
@@ -168,41 +135,35 @@
 
 }
 
+.dark .card h2{
 
-
-/* Mobil bar */
-
-.dark .mobile-bar{
-
-    background:#1b1b1b !important;
-    border-color:#333 !important;
+    color:#fff;
 
 }
 
 
-.dark .theme-toggle,
-.dark .menu-toggle{
+.dark .card p{
 
-    background:#1b1b1b !important;
-    color:white !important;
+    color:#ddd;
 
 }
 
+.dark .content > h2{
 
-
-/* Masaüstü tema tuşu */
-
-.dark .desktop-theme{
-
-    background:#1b1b1b;
-    color:white;
-    border-color:#333;
+    color:#fff;
+    border-left-color:#666;
 
 }
 
-
-.dark .desktop-theme:hover{
+.dark .route-placeholder{
 
     background:#2a2a2a;
+    color:#999;
+
+}
+
+.dark .route img{
+
+    border-color:#333;
 
 }
