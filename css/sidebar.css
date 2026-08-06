@@ -2,392 +2,178 @@
    SIDEBAR
 ========================= */
 
-
 .sidebar{
-
     position:fixed;
-
     left:0;
     top:0;
-
     width:260px;
-
     height:100vh;
-
     background:white;
-
     padding:25px;
-
     border-right:1px solid #eef0f2;
-
     transition:0.3s ease;
-
     z-index:1000;
-
 }
-
-
 
 /* Logo */
-
-
 .logo{
-
     font-size:24px;
-
     font-weight:700;
-
-    margin-bottom:40px;
-
+    margin-bottom:15px;
     position:relative;
-
     letter-spacing:-0.5px;
-
 }
 
-
-
-.logo::after{
-
-    content:'';
-
-    position:absolute;
-
-    bottom:-10px;
-
-    left:0;
-
-    width:35px;
-
-    height:3px;
-
-    background:#cecece;
-
-    border-radius:2px;
-
+/* Logo Altındaki İnce Çizgi */
+.logo-divider{
+    width:100%;
+    height:1px;
+    background-color:#eef0f2;
+    margin-bottom:25px;
 }
-
-
 
 /* Genel buton ayarları */
-
-
 .menu-toggle,
 .mobile-bar .theme-toggle{
-
     display:none;
-
     background:none;
-
     border:none;
-
     cursor:pointer;
-
 }
-
-
 
 /* Masaüstü tema butonu */
-
-
 .desktop-theme{
-
     position:fixed;
-
     top:20px;
-
     left:280px;
-
-
     width:48px;
-
     height:48px;
-
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
-
     background:white;
-
     border:1px solid #ddd;
-
     border-radius:12px;
-
-
     font-size:22px;
-
     cursor:pointer;
-
-
     z-index:1500;
-
     transition:.2s;
-
 }
-
-
 
 .desktop-theme:hover{
-
     background:#f5f5f5;
-
 }
-
-
 
 /* Menü */
-
-
 .menu a{
-
-    display:block;
-
+    display:flex;
+    align-items:center;
+    gap:10px; /* Emoji ile yazı arasındaki mesafe */
     color:#444;
-
     text-decoration:none;
-
-
-    padding:14px 16px;
-
+    padding:12px 16px;
     margin-bottom:8px;
-
-
     border-radius:8px;
-
     border-left:4px solid transparent;
-
-
     font-weight:600;
-
     font-size:15px;
-
-
     transition:.2s ease;
-
 }
-
-
 
 .menu a:hover{
-
     background:#f4f5f7;
-
     color:#000;
-
     padding-left:20px;
-
 }
-
-
 
 .menu a.active{
-
     background:#cecece;
-
     border-left:4px solid #605b5d;
-
     color:#000;
-
     font-weight:700;
-
     padding-left:16px;
-
 }
-
-
-
-
 
 /* =========================
    MOBİL
 ========================= */
 
-
 @media(max-width:768px){
 
-
-
 /* Sidebar kapalı */
-
-
 .sidebar{
-
     left:-280px;
-
     width:260px;
-
     height:100vh;
-
 }
-
-
 
 /* Açık sidebar */
-
-
 .sidebar.active{
-
     left:0;
-
 }
-
-
 
 /* Logo */
-
-
 .logo{
-
-    margin-top:45px;
-
+    margin-top:20px;
     font-size:22px;
-
 }
-
-
 
 /* Menü */
-
-
 .menu{
-
     display:block;
-
 }
-
-
 
 .menu a{
-
     white-space:normal;
-
 }
-
-
 
 /* Mobil üst bar */
-
-
 .mobile-bar{
-
     display:flex;
-
     position:fixed;
-
-
     top:0;
-
     left:0;
-
-
     width:100%;
-
     height:60px;
-
-
     background:white;
-
-
     align-items:center;
-
     padding-left:15px;
-
     gap:10px;
-
-
     z-index:2000;
-
-
     border-bottom:1px solid #eee;
-
 }
-
-
 
 /* Hamburger */
-
-
 .menu-toggle{
-
     display:flex;
-
-
     width:45px;
-
     height:45px;
-
-
     align-items:center;
-
     justify-content:center;
-
-
     background:white;
-
     border:none;
-
-
     font-size:28px;
-
-
     cursor:pointer;
-
     color:#000;
-
 }
-
-
 
 /* Mobil tema */
-
-
 .mobile-bar .theme-toggle{
-
-
     display:flex;
-
-
     width:45px;
-
     height:45px;
-
-
     align-items:center;
-
     justify-content:center;
-
-
     background:white;
-
-
     border:none;
-
-
     font-size:22px;
-
-
     cursor:pointer;
-
-
     color:#000;
-
 }
-
-
 
 /* Masaüstü tuşunu mobilde kapat */
-
-
 .desktop-theme{
-
     display:none;
-
 }
-
-
 
 }
