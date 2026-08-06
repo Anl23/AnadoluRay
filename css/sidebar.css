@@ -14,7 +14,7 @@ display:flex;
 align-items:center;
 justify-content:flex-end;
 padding:0 25px;
-z-index:1100;
+z-index:2000;
 box-sizing:border-box;
 }
 
@@ -189,7 +189,8 @@ height:45px;
 align-items:center;
 justify-content:center;
 background:white;
-border:none;
+border:1px solid #ddd;
+border-radius:12px;
 font-size:22px;
 cursor:pointer;
 color:#000;
@@ -200,4 +201,62 @@ color:#000;
 display:none;
 }
 
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark .top-bar{
+background:#1b1b1b;
+border-color:#333;
+}
+
+.dark .sidebar{
+background:#1b1b1b;
+border-color:#333;
+}
+
+.dark .logo{
+color:white;
+}
+
+.dark .menu a{
+color:#ddd;
+}
+
+.dark .menu a:hover{
+background:#2a2a2a;
+color:white;
+}
+
+.dark .menu a.active{
+background:#444;
+color:white;
+}
+
+.dark .desktop-theme{
+background:#1b1b1b;
+color:white;
+border-color:#333;
+}
+
+.dark .desktop-theme:hover{
+background:#2a2a2a;
+}
+
+.dark .mobile-bar{
+background:#1b1b1b !important;
+border-color:#333 !important;
+}
+
+.dark .theme-toggle,
+.dark .menu-toggle{
+background:#1b1b1b !important;
+color:white !important;
+border-color:#333 !important;
+}
+
+.dark .theme-toggle:hover{
+background:#2a2a2a !important;
 }
